@@ -1,4 +1,9 @@
-[[redirects]]
-from = "/*"
-to = "/index.php"
-status = 200
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+  [plugins.inputs]
+  target = "web"
+  debug = true
+[[plugins]]
+package = "@netlify/plugin-php"
+  [plugins.inputs]
+  version = "7.4"
